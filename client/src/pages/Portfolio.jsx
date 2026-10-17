@@ -11,12 +11,12 @@ const Portfolio = () => {
 
   // TODO: BACKEND CONNECT - Data from /api/portfolio
   const portfolioItems = [
-    { id: 1, cat: "Pre-Wedding", src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800" },
-    { id: 2, cat: "Wedding", src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800" },
-    { id: 3, cat: "Candid", src: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800" },
-    { id: 4, cat: "Traditional", src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800" },
-    { id: 5, cat: "Wedding", src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" },
-    { id: 6, cat: "Candid", src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800" },
+    { id: 1, cat: "Pre-Wedding", src: "https://i.pinimg.com/474x/d8/0b/92/d80b921a7bbfa92adf225e95228f9f56.jpg" },
+    { id: 2, cat: "Wedding", src: "https://www.tusktravel.com/blog/wp-content/uploads/2021/11/destination-wedding-hotels-udaipur.jpg" },
+    { id: 3, cat: "Candid", src: "https://img.freepik.com/premium-photo/candid-indian-family-photos-authentic-moments_1199394-213586.jpg" },
+    { id: 4, cat: "Traditional", src: "https://images.stockcake.com/public/f/a/7/fa76812e-16a2-4a87-8ead-b78b726c9636_large/traditional-indian-wedding-stockcake.jpg" },
+    { id: 5, cat: "Wedding", src: "https://wallpapercave.com/wp/wp7295476.jpg" },
+    { id: 6, cat: "Candid", src: "https://i.pinimg.com/originals/87/e0/9e/87e09ecd72940cbc85a8496622d8d136.jpg" },
   ];
 
   const filteredItems = activeTab === "All" ? portfolioItems : portfolioItems.filter(item => item.cat === activeTab);

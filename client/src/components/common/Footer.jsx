@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="bg-lux-black py-12 sm:py-14 md:py-16 border-t border-white/10 text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-serif text-lux-gold mb-4 sm:mb-6">
-          Priyanshu Web Services
+          Your Brand
         </h2>
         <p className="text-xs sm:text-sm text-lux-gray mb-6 sm:mb-8 max-w-md mx-auto px-2">
           Capturing timeless love stories with a cinematic touch.

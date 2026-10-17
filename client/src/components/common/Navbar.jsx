@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled || menuOpen ? 'bg-lux-black/95 py-3 sm:py-4 shadow-lg' : 'bg-transparent py-4 sm:py-6'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <Link to="/" onClick={() => setMenuOpen(false)} className="text-base sm:text-xl md:text-2xl font-serif text-lux-gold tracking-wider sm:tracking-widest uppercase">
-          Priyanshu Web Services
+         Your Brand
         </Link>
 
         {/* Desktop menu */}
