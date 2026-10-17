@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-lux-dark: #121212;
+  --color-lux-black: #0a0a0a;
+  --color-lux-gold: #C5A880;
+  --color-lux-cream: #F3EFE6;
+  --color-lux-gray: #8E8E8E;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  /* Prevent horizontal scroll globally (transforms, offsets, absolute elements) */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  body {
+    background-color: var(--color-lux-dark);
+    color: var(--color-lux-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Images & media never overflow their container */
+  img,
+  video,
+  svg,
+  canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Inputs readable without zoom on iOS */
+  input,
+  textarea,
+  select,
+  button {
+    font-family: inherit;
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* Long words / URLs break instead of overflowing */
+  h1, h2, h3, h4, h5, h6, p, a, li, span {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* Touch-friendly tap targets on mobile */
+  @media (hover: none) and (pointer: coarse) {
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  /* Respect user motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
